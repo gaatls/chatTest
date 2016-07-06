@@ -1,0 +1,19 @@
+{
+  "name": "chattest",
+  "version": "1.0.0",
+  "description": "Just a chat test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaatls/chatTest.git"
+  },
+  "author": "Graham Anthony",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaatls/chatTest/issues"
+  },
+  "homepage": "https://github.com/gaatls/chatTest#readme"
+}
