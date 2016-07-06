@@ -4,7 +4,8 @@
   "description": "Just a chat test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runBot": "./start_chatbot.sh"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/gaatls/chatTest/issues"
   },
-  "homepage": "https://github.com/gaatls/chatTest#readme"
+  "homepage": "https://github.com/gaatls/chatTest#readme",
+  "dependencies": {
+    "botkit": "^0.2.2",
+    "witbot": "^2.1.0"
+  }
 }
