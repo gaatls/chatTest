@@ -29,7 +29,10 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
        console.log(response);
         if( checkResponseConfidence(response) ){
             bot.reply(message, response.result.fulfillment.speech);
-        }    
+        }
+        else{
+            bot.reply(message, "I don't understand what you're asking for.");
+        }
     });
     
     request.on('error', function(response){
