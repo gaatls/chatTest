@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gaatls/chatTest#readme",
   "dependencies": {
-    "botkit": "^0.2.2",
-    "witbot": "^2.1.0"
+    "apiai": "^2.0.5",
+    "botkit": "^0.2.2"
   }
 }
