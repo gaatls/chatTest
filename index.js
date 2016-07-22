@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 console.log('started');
 
 //Taking care of the different api authorization tokens, use the bash script to start the bot.
@@ -22,7 +22,6 @@ controller.spawn({
 
     // wire up DMs and direct mentions to wit.ai
 controller.hears('.*', 'direct_message,direct_mention', function (bot, message) {
-    console.log("someone said something to me!");
     let request = nlProcessor.textRequest(message.text);
     
     request.on('response', function(response){
@@ -31,7 +30,7 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
             bot.reply(message, response.result.fulfillment.speech);
         }
         else{
-            bot.reply(message, "I don't understand what you're asking for.");
+            bot.reply(message, "I don't understand what you're asking.");
         }
     });
     
@@ -45,7 +44,6 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
 function checkResponseConfidence(response){
     let retVal = false;
     if( response.result.score > 0.5){
-        console.log("we're confident!");
         retVal = true;
     }
     return retVal;
